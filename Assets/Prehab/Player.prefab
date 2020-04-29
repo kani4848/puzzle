@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6601195455773571736}
   - component: {fileID: 5156432519414251443}
   m_Layer: 9
-  m_Name: GameObject
+  m_Name: image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -68,7 +68,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: f63aa147ba8edc1419d5f506208fba90, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -151,6 +151,7 @@ MonoBehaviour:
   fire: {fileID: 6961169853462964700, guid: 2b61c6f1180f5854eb98a3f6c6452a6f, type: 3}
   isLand: 0
   isWater: 0
+  isGoal: 0
   jumpSE: {fileID: 8300000, guid: a00ffa2fedd3444478395c89f644fd86, type: 3}
   fireSE: {fileID: 8300000, guid: a12eccbd9a27be84aa31559c47f8e5d5, type: 3}
 --- !u!61 &2307090682525280348

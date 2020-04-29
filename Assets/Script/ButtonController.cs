@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ButtonController : MonoBehaviour
 {
@@ -51,5 +52,29 @@ public class ButtonController : MonoBehaviour
     public void ShootFire()
     {
         player.ShootFire();
+    }
+
+    public void Undo()
+    {
+        // 現在のScene名を取得する
+        Scene loadScene = SceneManager.GetActiveScene();
+        // Sceneの読み直し
+        SceneManager.LoadScene(loadScene.name);
+    }
+    public void Go1()
+    {
+        // Sceneの読み直し
+        SceneManager.LoadScene("stage1");
+    }
+
+    public void Go2()
+    {
+        // Sceneの読み直し
+        SceneManager.LoadScene("stage2");
+    }
+    public void Go3()
+    {
+        // Sceneの読み直し
+        SceneManager.LoadScene("stage3");
     }
 }

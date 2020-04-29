@@ -40,13 +40,13 @@ public class PlayerController : MonoBehaviour
             MoveRight();
         }
         //火を打つ
-        if (Input.GetKeyDown(KeyCode.Z))
+        if (Input.GetKeyDown(KeyCode.X))
         {
             ShootFire();
         }
 
         //ジャンプ
-        if (Input.GetKeyDown(KeyCode.X))
+        if (Input.GetKeyDown(KeyCode.Z))
         {
             Jump();
         }
@@ -116,6 +116,10 @@ public class PlayerController : MonoBehaviour
                 break;
 
             case "Block":
+                isLand = true;
+                break;
+
+            case "Ami":
                 isLand = true;
                 break;
         }

@@ -10,6 +10,8 @@ public class UIManagaer : MonoBehaviour
     public GameObject clear;
     public AudioSource audioSource;
     public AudioClip clearSound;
+    public GameObject actionButton;
+    public GameObject stageButton;
 
     public bool isGoal = false;
 
@@ -18,6 +20,7 @@ public class UIManagaer : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
 
         clear.SetActive(false);
+        stageButton.SetActive(false);
     }
 
     // Update is called once per frame
@@ -28,6 +31,8 @@ public class UIManagaer : MonoBehaviour
             clear.SetActive(true);
             audioSource.PlayOneShot(clearSound);
             isGoal = true;
+            actionButton.SetActive(false);
+            stageButton.SetActive(true);
         }
     }
 
